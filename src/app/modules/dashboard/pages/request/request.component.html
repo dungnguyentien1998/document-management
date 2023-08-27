@@ -1,0 +1,231 @@
+<div class="row">
+  <div class="col-md-6 mx-auto">
+    <div class="card">
+      <div class="card-header">
+        <h3 class="display-5">Reactive Form</h3>
+      </div>
+      <div class="card-body">
+        <form
+          [formGroup]="requestForm"
+          (ngSubmit)="onSubmit()"
+          autocomplete="off"
+        >
+          <div class="mb-3">
+            <label for="diaDiem" class="form-label">diaDiem</label>
+            <input type="text" class="form-control" formControlName="diaDiem" />
+            <span
+              class="text-danger"
+              *ngIf="
+                  (requestFormControl.diaDiem.touched || submitted) &&
+                  requestFormControl.diaDiem.errors?.['required']"
+            >
+              diaDiem is required
+            </span>
+          </div>
+          <div class="mb-3">
+            <label for="ngay" class="form-label">ngay</label>
+            <input type="text" class="form-control" formControlName="ngay" />
+            <span
+              class="text-danger"
+              *ngIf="
+                  (requestFormControl.ngay.touched || submitted) &&
+                  requestFormControl.ngay.errors?.['required']"
+            >
+            ngay is required
+            </span>
+          </div>
+          <div class="mb-3">
+            <label for="thang" class="form-label">thang</label>
+            <input type="text" class="form-control" formControlName="thang"/>
+            <span
+              class="text-danger"
+              *ngIf="
+                  (requestFormControl.thang.touched || submitted) &&
+                  requestFormControl.thang.errors?.['required']"
+            >
+              thang is required
+            </span>
+          </div>
+          <div class="mb-3">
+            <label for="nam" class="form-label">nam</label>
+            <input type="text" class="form-control" formControlName="nam"/>
+            <span
+              class="text-danger"
+              *ngIf="
+                  (requestFormControl.nam.touched || submitted) &&
+                  requestFormControl.nam.errors?.['required']"
+            >
+              nam is required
+            </span>
+          </div>
+          <div class="mb-3">
+            <label for="tenNhatKy" class="form-label">tenNhatKy</label>
+            <input type="text" class="form-control" formControlName="tenNhatKy"/>
+            <span
+              class="text-danger"
+              *ngIf="
+                  (requestFormControl.tenNhatKy.touched || submitted) &&
+                  requestFormControl.tenNhatKy.errors?.['required']"
+            >
+              tenNhatKy is required
+            </span>
+          </div>
+          <div class="mb-3">
+            <label for="goiThauSo" class="form-label">goiThauSo</label>
+            <input type="text" class="form-control" formControlName="goiThauSo"/>
+            <span
+              class="text-danger"
+              *ngIf="
+                  (requestFormControl.goiThauSo.touched || submitted) &&
+                  requestFormControl.goiThauSo.errors?.['required']"
+            >
+              goiThauSo is required
+            </span>
+          </div>
+          <div class="mb-3">
+            <label for="tenGoiThau" class="form-label">tenGoiThau</label>
+            <input type="text" class="form-control" formControlName="tenGoiThau"/>
+            <span
+              class="text-danger"
+              *ngIf="
+                  (requestFormControl.tenGoiThau.touched || submitted) &&
+                  requestFormControl.tenGoiThau.errors?.['required']"
+            >
+              tenGoiThau is required
+            </span>
+          </div>
+          <div class="mb-3">
+            <label for="tenDuAn" class="form-label">tenDuAn</label>
+            <input type="text" class="form-control" formControlName="tenDuAn"/>
+            <span
+              class="text-danger"
+              *ngIf="
+                  (requestFormControl.tenDuAn.touched || submitted) &&
+                  requestFormControl.tenDuAn.errors?.['required']"
+            >
+              tenDuAn is required
+            </span>
+          </div>
+          <div class="mb-3">
+            <label for="viTriMong" class="form-label">viTriMong</label>
+            <input type="text" class="form-control" formControlName="viTriMong"/>
+            <span
+              class="text-danger"
+              *ngIf="
+                  (requestFormControl.viTriMong.touched || submitted) &&
+                  requestFormControl.viTriMong.errors?.['required']"
+            >
+              viTriMong is required
+            </span>
+          </div>
+          <div class="mb-3">
+            <label for="loaiMong" class="form-label">loaiMong</label>
+            <input type="text" class="form-control" formControlName="loaiMong"/>
+            <span
+              class="text-danger"
+              *ngIf="
+                  (requestFormControl.loaiMong.touched || submitted) &&
+                  requestFormControl.loaiMong.errors?.['required']"
+            >
+              loaiMong is required
+            </span>
+          </div>
+          <div class="mb-3">
+            <label for="khoangNeo" class="form-label">khoangNeo</label>
+            <input type="text" class="form-control" formControlName="khoangNeo"/>
+            <span
+              class="text-danger"
+              *ngIf="
+                  (requestFormControl.khoangNeo.touched || submitted) &&
+                  requestFormControl.khoangNeo.errors?.['required']"
+            >
+              khoangNeo is required
+            </span>
+          </div>
+          <div class="mb-3">
+            <label for="banVeThiCongSo" class="form-label">banVeThiCongSo</label>
+            <input type="text" class="form-control" formControlName="banVeThiCongSo"/>
+            <span
+              class="text-danger"
+              *ngIf="
+                  (requestFormControl.banVeThiCongSo.touched || submitted) &&
+                  requestFormControl.banVeThiCongSo.errors?.['required']"
+            >
+              banVeThiCongSo is required
+            </span>
+          </div>
+          <div class="mb-3">
+            <label for="batDau" class="form-label">batDau</label>
+            <input type="text" class="form-control" formControlName="batDau"/>
+            <span
+              class="text-danger"
+              *ngIf="
+                  (requestFormControl.batDau.touched || submitted) &&
+                  requestFormControl.batDau.errors?.['required']"
+            >
+              batDau is required
+            </span>
+          </div>
+          <div class="mb-3">
+            <label for="ketThuc" class="form-label">ketThuc</label>
+            <input type="text" class="form-control" formControlName="ketThuc"/>
+            <span
+              class="text-danger"
+              *ngIf="
+                  (requestFormControl.ketThuc.touched || submitted) &&
+                  requestFormControl.ketThuc.errors?.['required']"
+            >
+              ketThuc is required
+            </span>
+          </div>
+          <div class="mb-3">
+            <label for="danhGia" class="form-label">danhGia</label>
+            <input type="text" class="form-control" formControlName="danhGia"/>
+            <span
+              class="text-danger"
+              *ngIf="
+                  (requestFormControl.danhGia.touched || submitted) &&
+                  requestFormControl.danhGia.errors?.['required']"
+            >
+              danhGia is required
+            </span>
+          </div>
+          <div class="mb-3">
+            <label for="tuVanGiamSat" class="form-label">tuVanGiamSat</label>
+            <input type="text" class="form-control" formControlName="tuVanGiamSat"/>
+            <span
+              class="text-danger"
+              *ngIf="
+                  (requestFormControl.tuVanGiamSat.touched || submitted) &&
+                  requestFormControl.tuVanGiamSat.errors?.['required']"
+            >
+              tuVanGiamSat is required
+            </span>
+          </div>
+          <div class="mb-3">
+            <label for="kyThuatB" class="form-label">kyThuatB</label>
+            <input type="text" class="form-control" formControlName="kyThuatB"/>
+            <span
+              class="text-danger"
+              *ngIf="
+                  (requestFormControl.kyThuatB.touched || submitted) &&
+                  requestFormControl.kyThuatB.errors?.['required']"
+            >
+              kyThuatB is required
+            </span>
+          </div>
+          <div align="right">
+            <button type="submit" class="btn btn-success">Submit</button>
+            <button
+              type="reset"
+              class="btn btn-danger ms-2"
+              (click)="resetForm()"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
